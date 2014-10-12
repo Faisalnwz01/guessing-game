@@ -1,0 +1,133 @@
+
+/* Typography
+================================= */
+
+.navbar-text {
+	font-weight: bold;
+	margin-right: 0;
+}
+h1 {
+	border-color: red;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.lead {
+	color: #d5c1f2;
+	margin-bottom: 45px;
+}
+.lead:nth-of-type(2) {
+	font-size: initial;
+	margin-bottom: 20px;
+}
+
+/* Jumbotron
+================================= */
+
+.jumbotron {
+	background-repeat: no-repeat;
+	background-position: 200% 100%;
+	padding: 110px 0 100px 0;
+	margin-bottom: 30px;
+}
+.questionmark {
+	width: 380px;
+	height: 800px;
+	background: url('../img/imgres.jpg') no-repeat;
+	background-size: 350px;
+}
+
+
+
+
+
+/* Buttons
+================================= */
+
+.btn-default {
+	border-width: 2px;
+	border-color: inherit;
+	margin-right: 10px;
+	padding: 12px 24px;
+}
+.btn-default:hover {
+	background-color: #fff;
+	color: #957bba;
+	border-color: #fff;
+}
+
+
+/* Input
+================================= */
+.input-default {
+	border-width: 2px;
+	border-color: blue;
+	margin-right: 0px;
+	padding: 12px 40px;
+}
+.input-default:hover {
+	background-color: #fff;
+	color: #957bba;
+	border-color: #fff;
+}
+
+
+/* Logos & Icons
+================================= */
+
+.main-logo {
+	width: 150px;
+	height: 60px;
+	margin-top: 24px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url('../img/fullstack-academy-logo.jpg') no-repeat;
+	background-size: 100%;
+}
+
+/* Media Quries
+================================= */
+@media (max-width: 991px) {
+	.jumbotron {
+		padding-top: 120px;
+		padding-bottom: 20px;
+		background-position: 10% 10%;
+	}
+media (max-width: 767px)  {
+	.navbar {
+		min-height: 60px;
+	}
+	.jumbotron {
+		padding-top: 80px;
+		margin-bottom: 32px;
+	}
+	.lead {
+		margin-bottom: 40px;
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
