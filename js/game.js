@@ -6,8 +6,8 @@ $(document).ready(function newGame() {
     $("#mysteryNumber").val(Math.floor((Math.random() * 100) + 1));
     $("#guess_text").html("Please guess the generated number!");
     
-	};
-	generatedNumber()
+	}
+	
 
 	var guessedAlready= [];
 	var numberOfTurns = 5;
@@ -55,7 +55,7 @@ $(document).ready(function newGame() {
 
 
 $("#hintButton").on("click",function hint() {
-	$("#guess_text").html( "The correct answer is " + $("#mysteryNumber") + "!!!");
+	alert( "The correct answer is " + $("#mysteryNumber") + "!!!");
 })
 
 $("#playAgain").on("click", function playAgain() {
