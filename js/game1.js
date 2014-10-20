@@ -20,6 +20,10 @@ $(document).ready(function newGame() {
 		}
 		else if (user_input == numberX) {
 			$("#guess_text").html("YOU WIN, YOU GUESSED RIGHT, NOW GO AND PLAY LOTO!"); 
+			$("#questionmark").hide("slow");
+			$("#firepic1").hide("slow");
+			$("#icepic1").hide("slow");
+
 			numberOfTurns = 0;
 		}
 		else if (user_input == guessedAlready[i]) {
@@ -31,16 +35,22 @@ $(document).ready(function newGame() {
 			};
 		}
 		else {
-			if ((distance >= 1) && (distance < 20)) {
+			if ((distance >= 1) && (distance < 10)) {
 				$("#guess_text").html("Super hot");
-			} else if ((distance >= 20) && (distance < 40)) {
+				$("#questionmark").hide("slow");
+			} else if ((distance >= 11) && (distance < 20)) {
 				$("#guess_text").html( "Hot");
-			} else if ((distance >= 40) && (distance < 60)) {
+				$("#questionmark").hide("slow");
+			} else if ((distance >= 21) && (distance < 30)) {
 				$("#guess_text").html("Warm");
-			} else if ((distance >= 60) && (distance < 80)) {
+			} else if ((distance >= 31) && (distance < 40)) {
 				$("#guess_text").html("Cold");
-			} else if ((distance >= 80) && (distance < 100)) {
+				$("#firepic1").hide("slow");
+				$("#questionmark").hide("slow");
+			} else if ((distance >= 41) && (distance < 100)) {
 				$("#guess_text").html( "Ice cold");
+				$("#questionmark").hide("slow");
+				$("#firepic1").hide("slow");
 			}
 			numberOfTurns -- ;	
 		}		
